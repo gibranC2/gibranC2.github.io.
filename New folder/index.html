@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bukti Pemesanan</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        h2, h3 {
+            text-align: center;
+        }
+        img {
+            width: 100px;
+            height: auto;
+        }
+        .center {
+            text-align: center;
+        }
+        .right {
+            text-align: right;
+        }
+        .payment-method {
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2><img src="logo.resto.jpeg" alt="Restaurant Logo"></h2>
+    <h3>Bukti Pemesanan</h3>
+
+    <table>
+        <tr>
+            <td>Nama Pelayan: <strong>Boaz Salosa</strong></td>
+            <td>Tanggal Pemesanan: <input type="text" placeholder="mm/dd/yyyy"></td>
+        </tr>
+        <tr>
+            <td>Nama Pemesan: <strong>Gibran Amba</strong></td>
+            <td>Alamat Pemesan: <strong>Jl. Perumahan pinang mas Blok D, Kota Samarinda</strong></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Nama Menu</th>
+            <th class="center">Jumlah</th>
+            <th class="right">Harga Satuan</th>
+            <th class="right">Total Harga</th>
+        </tr>
+        <tr>
+            <td><img src="nasi-goreng (1).jpeg" alt="Nasi Goreng Spesial"><br>Nasi Goreng Spesial</td>
+            <td class="center"><input type="number" value="1"> Porsi</td>
+            <td class="right">Rp 25.000</td>
+            <td class="right">Rp 25.000</td>
+        </tr>
+        <tr>
+            <td><img src="es-teh-manis (1).jpeg" alt="Es Teh Manis"><br>Es Teh Manis</td>
+            <td class="center"><input type="number" value="1"> Gelas</td>
+            <td class="right">Rp 5.000</td>
+            <td class="right">Rp 5.000</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="right"><strong>Total Pesanan</strong></td>
+            <td class="right">Rp 30.000</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="right">Pajak</td>
+            <td class="right">Rp 2.000</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="right"><strong>Total Tagihan</strong></td>
+            <td class="right"><strong>Rp 32.000</strong></td>
+        </tr>
+    </table>
+
+    <div class="payment-method">
+        <strong>Metode Pembayaran:</strong><br>
+        <input type="checkbox"> Bank BCA 
+        <input type="checkbox"> Bank BRI 
+        <input type="checkbox"> OVO 
+        <input type="checkbox"> GoPay
+    </div>
+
+    <table style="margin-top: 20px;">
+        <tr>
+            <td>Nama: <strong>Gibran Amba Lembang</strong></td>
+        </tr>
+        <tr>
+            <td>NIM: <strong>2309106139</strong></td>
+        </tr>
+        <tr>
+            <td>Praktikum Web: <a href="#">Posttest 1</a></td>
+        </tr>
+    </table>
+
+</body>
+</html>
